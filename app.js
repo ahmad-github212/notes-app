@@ -8,7 +8,6 @@ yargs.command(
     {
         command: 'add',
         describe: 'add a note',
-
         //we define builder for options we want to have with our command
         builder: {
             title: {
@@ -73,7 +72,6 @@ yargs.command({
             type:'string'
         }
     },
-
     handler(argv) {
         notes.readNotes(argv.title);
     }
